@@ -49,7 +49,7 @@ public class AmazonCustomer {
 		return c;
 	}
 	
-	public void addProductInWishlist(AmazonProduct p) {
+	public void addProductInWishList(AmazonProduct p) {
 		wishList.add(p);
 	}
 	
@@ -181,6 +181,22 @@ public class AmazonCustomer {
 				}
 			}
 		}
+	}
+	
+	public int getNumberOfComments() {
+		return comments.size();
+	}
+	
+	public int getNumberOfCredits() {
+		return credits.size();
+	}
+	
+	public int getCartSize() {
+		return cart.getSize();
+	}
+	
+	public int getWishlistSize() {
+		return wishList.size();
 	}
 	
 	public int getID() {
