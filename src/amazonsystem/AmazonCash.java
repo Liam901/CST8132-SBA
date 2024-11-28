@@ -1,5 +1,7 @@
 package amazonsystem;
 
+import amazonsystem.AmazonCredit.PaymentType;
+
 public class AmazonCash extends AmazonCredit {
 	PaymentType type = PaymentType.Cash;
 	
@@ -15,6 +17,14 @@ public class AmazonCash extends AmazonCredit {
 		String line;
 		line = "Payment Type: " + type + ", Value: " + value;
 		return line;
+	}
+	
+	public PaymentType getType() {
+		return type;
+	}
+	
+	public String getData() {
+		return "" + value;
 	}
 	
 	

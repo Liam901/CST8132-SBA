@@ -1,5 +1,6 @@
 package amazonsystem;
 
+import amazonsystem.AmazonCredit.PaymentType;
 
 public class AmazonCard extends AmazonCredit {
 	private String cardNumber;
@@ -18,5 +19,13 @@ public class AmazonCard extends AmazonCredit {
 	
 	public String toString() {
 		return "Payment Type: " + type + ", Card Number: " + cardNumber + ", Expiration Date: " + expiration + ", Value: " + value; 
+	}
+	
+	public PaymentType getType() {
+		return type;
+	}
+	
+	public String getData() {
+		return value + "," + cardNumber + "," + expiration;
 	}
 }

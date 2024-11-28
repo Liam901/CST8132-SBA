@@ -63,6 +63,11 @@ public class AmazonCart implements AmazonPayable{
 		return temp;
 	}
 	
+	public ArrayList<AmazonCartItem> getCart(){
+		return items;
+	}
+	
+	
 	public int getSize() {
 		return items.size();
 	}

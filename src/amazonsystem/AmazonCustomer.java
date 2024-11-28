@@ -227,6 +227,32 @@ public class AmazonCustomer {
 		return id;
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public ArrayList<AmazonProduct> getWishList(){
+		return wishList;
+	}
+	
+	public ArrayList<AmazonCredit> getCredits(){
+		return credits;
+	}
+	
+	public ArrayList<AmazonComment> getComments(){
+		return comments;
+	}
+	
+	public ArrayList<AmazonCartItem> getCart(){
+		return cart.getCart();
+	}
+	
+	
+	
 	
 	
 

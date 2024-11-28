@@ -2,6 +2,7 @@ package amazonsystem;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +11,7 @@ import org.junit.jupiter.api.Test;
 class TestSBA {
 
 	@Test
-	void test() throws AmazonException {
+	void test() throws AmazonException, IOException {
 		// This test is divided into parts
 		System.out.println("[SBA Test] :::::::::::::::::::::::::::::::::::::::::::::");
 		// Change to put the name of your team

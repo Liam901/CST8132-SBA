@@ -21,4 +21,9 @@ public abstract class AmazonCredit {
 	public float getValue() {
 		return value;
 	}
+	
+	public abstract PaymentType getType();
+	
+	public abstract String getData();
+	
 }

@@ -15,12 +15,16 @@ public class AmazonCartItem {
 	}
 	
 	public String toString() {
-		String line = product.getProductDetails() + ", Quantity: " + quantity + ", Subtotal: " + calcSubtotal();
+		String line = product.getName() + ", Quantity: " + quantity + ", Subtotal: " + calcSubtotal();
 		return line;
 	}
 	
 	public AmazonProduct getAmazonProduct() {
 		return product;
+	}
+	
+	public int getQuantity() {
+		return quantity;
 	}
 	
 }

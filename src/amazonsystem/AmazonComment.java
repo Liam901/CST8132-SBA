@@ -41,4 +41,12 @@ public class AmazonComment {
 	public AmazonProduct getProduct() {
 		return product;
 	}
+	
+	public String getComment() {
+		return comment;
+	}
+	
+	public float getRating() {
+		return rating;
+	}
 }

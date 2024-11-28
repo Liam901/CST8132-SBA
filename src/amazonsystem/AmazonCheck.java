@@ -16,5 +16,13 @@ public class AmazonCheck extends AmazonCredit {
 	public String toString() {
 		return "Payment Type: " + type + ", Account Number: " + accountNumber + ", Value: " + value;
 	}
+	
+	public PaymentType getType() {
+		return type;
+	}
+	
+	public String getData() {
+		return value + "," + accountNumber;
+	}
 
 }
