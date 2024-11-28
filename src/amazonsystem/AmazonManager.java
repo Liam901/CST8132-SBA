@@ -111,7 +111,7 @@ public class AmazonManager {
 					s = scanner.nextLine();
 					if (AmazonUtil.isValidInt(s)) {
 						int b = getProductByID(Integer.parseInt(s));
-						customers.get(i).addProductInWishlist(products.get(b));
+						customers.get(i).addProductInWishList(products.get(b));
 					}
 				} catch (AmazonException e) {}
 			}

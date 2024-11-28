@@ -183,6 +183,29 @@ public class AmazonCustomer {
 		}
 	}
 	
+	public AmazonComment getComment(int i) {
+		return comments.get(i);
+	}
+	
+	public void setComment(AmazonProduct product, String comment, float rating) throws AmazonException {
+		for(AmazonComment c:comments) {
+			if (c.getProduct() == product) {
+				c.setComment(comment);
+				c.setRating(rating);
+			}
+		}
+	}
+	
+	public void pay(int index) throws AmazonException {
+		cart.pay(credits.get(index).getValue());
+		credits.get(index).setValue(credits.get(index).getValue() - cart.calcSubTotal());
+		ArrayList<AmazonProduct> temp = cart.getList();
+		for (AmazonProduct p: temp) {
+			comments.add(new AmazonComment(p));
+		}
+		cart.clear();
+	}
+	
 	public int getNumberOfComments() {
 		return comments.size();
 	}
@@ -198,6 +221,7 @@ public class AmazonCustomer {
 	public int getWishlistSize() {
 		return wishList.size();
 	}
+	
 	
 	public int getID() {
 		return id;

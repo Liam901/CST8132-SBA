@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class TestSBA {
 
 	@Test
-	void test() {
+	void test() throws AmazonException {
 		// This test is divided into parts
 		System.out.println("[SBA Test] :::::::::::::::::::::::::::::::::::::::::::::");
 		// Change to put the name of your team
